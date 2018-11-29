@@ -26,6 +26,16 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+
+```yaml
+aaaa:
+	wdwdwdw: 123123
+	wdwdww: eeee
+	pro:
+		- 1
+		- 2
+```
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
