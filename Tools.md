@@ -9,22 +9,7 @@
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__left">
-    <div class="stackedit__toc">
-      
-<ul>
-<li><a href="#小工具收集">小工具收集</a>
-<ul>
-<li><a href="#network">Network</a></li>
-</ul>
-</li>
-</ul>
-
-    </div>
-  </div>
-  <div class="stackedit__right">
-    <div class="stackedit__html">
-      <h1 id="小工具收集">小工具收集</h1>
+  <div class="stackedit__html"><h1 id="小工具收集">小工具收集</h1>
 <h2 id="network">Network</h2>
 <h3 id="mtr">mtr</h3>
 <p>結合 ping 與 tracerote 的小工具, 方便找出反應慢的 hop<br>
@@ -96,9 +81,7 @@ speed_download: 74.2 KiB/s, speed_upload: 0.0 KiB/s
 <pre class=" language-txrt"><code class="prism  language-txrt"># httpstat
 export HTTPSTAT_SAVE_BODY=false 
 </code></pre>
-
-    </div>
-  </div>
+</div>
 </body>
 
 </html>
