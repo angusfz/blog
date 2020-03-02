@@ -1,83 +1,53 @@
-## Welcome to GitHub Pages
+<!-- TOC -->
 
+- [Notes](#notes)
+	- [HTTP](#http)
+		- [Cache relation header](#cache-relation-header)
+	- [Git](#git)
+- [Studying](#studying)
+	- [AWS](#aws)
 
-111
+<!-- /TOC -->
 
-You can use the [editor on GitHub](https://github.com/angusfz/blog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Notes
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### HTTP
 
-markdown preview
+#### Cache relation header
 
-![Alt text](https://g.gravizo.com/source/svg/custom_mark12?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
-<details> 
-<summary></summary>
-custom_mark12
-/**
-*Structural Things
-*@opt commentname
-*@note Notes can
-*be extended to
-*span multiple lines
-*/
-class Structural{}
+- [Expires](https://tools.ietf.org/html/rfc7234#section-5.3)
 
-/**
-*@opt all
-*@note Class
-*/
-class Counter extends Structural {
-        static public int counter;
-        public int getCounter();
-}
-
-/**
-*@opt shape activeclass
-*@opt all
-*@note Active Class
-*/
-class RunningCounter extends Counter{}
-custom_mark12
-</details>
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```text
+Expires = "Expires" ":" HTTP-date
+Expires: Thu, 01 Dec 1994 16:00:00 GMT
 ```
 
+if [ cache-control: max-age=N && Expires ], expires should be ignored and using $N
 
-```yaml
-aaaa:
-	wdwdwdw: 123123
-	wdwdww: eeee
-	pro:
-		- 1
-		- 2
-```
+- [Cache-control](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Reference: 
 
-### Jekyll Themes
+[Header Field Definitions](https://tools.ietf.org/html/rfc7234#section-5.2.2)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/angusfz/blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Git
 
-### Support or Contact
+[Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- chore: (updating grunt tasks etc; no production code change)
+- docs: (changes to the documentation)
+- feat: (new feature for the user, not a new feature for build script)
+- fix: (bug fix for the user, not a fix to a build script)
+- refactor: (refactoring production code, eg. renaming a variable)
+- style: (formatting, missing semi colons, etc; no production code change)
+- test: (adding missing tests, refactoring tests; no production code change)
+
+
+[Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+
+## Studying
+
+### AWS
+[Building serverless applications with the AWS CDK - and testing them locally](https://sanderknape.com/2019/05/building-serverless-applications-aws-cdk/#displaying-cloudformation-changes)
+
+[This is How I Reduced My CloudFront Bills by 80%](https://medium.com/faun/this-is-how-i-reduced-my-cloudfront-bills-by-80-a7b0dfb24128)
