@@ -4,8 +4,10 @@
 	- [HTTP](#http)
 		- [Cache relation header](#cache-relation-header)
 	- [Git](#git)
+	- [Misc](#misc)
 - [Studying](#studying)
 	- [AWS](#aws)
+		- [Cloudfront](#cloudfront)
 
 <!-- /TOC -->
 
@@ -42,12 +44,20 @@ Reference:
 - style: (formatting, missing semi colons, etc; no production code change)
 - test: (adding missing tests, refactoring tests; no production code change)
 
-
 [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+
+### Misc
+
+[Decrypting SSL/TLS traffic with Wireshark](https://resources.infosecinstitute.com/decrypting-ssl-tls-traffic-with-wireshark/)
 
 ## Studying
 
 ### AWS
+
 [Building serverless applications with the AWS CDK - and testing them locally](https://sanderknape.com/2019/05/building-serverless-applications-aws-cdk/#displaying-cloudformation-changes)
 
+#### Cloudfront
+
 [This is How I Reduced My CloudFront Bills by 80%](https://medium.com/faun/this-is-how-i-reduced-my-cloudfront-bills-by-80-a7b0dfb24128)
+
+<https://github.com/awsdocs/amazon-cloudfront-developer-guide>
