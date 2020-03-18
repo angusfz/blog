@@ -1,6 +1,7 @@
 <!-- TOC -->
 
 - [Notes](#notes)
+  - [PI4](#pi4)
   - [HTTP](#http)
     - [Cache relation header](#cache-relation-header)
   - [Travisci](#travisci)
@@ -17,6 +18,24 @@
 <!-- /TOC -->
 
 ## Notes
+
+
+### PI4
+
+- [Ubuntu mint unoffical](https://github.com/TheRemote/Ubuntu-Server-raspi4-unofficial/releases)
+
+- dd from image to SD
+
+```bash
+# List disks
+$ diskutil list
+
+# Unmount disk
+$ diskutil umountDisk /dev/disk2
+
+$ sudo sh -c 'gunzip -c ~/Desktop/ubuntu-18.04.4.img.xz | sudo dd of=/dev/rdisk2 bs=32m'
+```
+
 
 ### HTTP
 
@@ -46,6 +65,8 @@ Reference:
 <https://yaml.org/spec/1.2/spec.html#id2765878>
 
 - [YAML Parser](http://yaml-online-parser.appspot.com/)
+
+- [YAML 表示多行的寫法](https://stackoverflow.com/questions/3790454/how-do-i-break-a-string-over-multiple-lines/21699210#21699210) 
 
 ### Git
 
@@ -88,10 +109,16 @@ $ t=TAG_NAME; git tag $t; git push origin $t
 $ git tag -d TAG_NAME
 
 # Delete remote tag
-$ git --delete origin TAG_NAME
+$ git push --delete origin TAG_NAME
 
 # Delete remote tag(alternative)
 $ git push origin :refs/tags/TAG_NAME
+
+# Delete local branch
+$ git branch -D BRANCH_NAME
+
+# Delete remote branch
+$ git push origin :cat
 
 ```
 
