@@ -1,6 +1,6 @@
 # pi4
 
-# overclock
+## overclock
 
 `/boot/config.txt`
 
@@ -10,7 +10,7 @@ arm_freq=2147
 gpu_freq=750
 ```
 
-# misc
+## misc
 - Install vscodium
 
 ```sh
@@ -24,5 +24,7 @@ $ sudo apt update && sudo apt install codium
 - scim
 
 ```txt
-scim-tables-zh
+sudo apt-get install scim-chewing
+sudo apt-get install im-switch
+im-switch
 ```
