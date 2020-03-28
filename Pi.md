@@ -20,3 +20,9 @@ $ echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/
 $ sudo apt update && sudo apt install codium
 
 ```
+
+- scim
+
+```txt
+scim-tables-zh
+```
